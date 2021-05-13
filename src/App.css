@@ -17,6 +17,7 @@
   }
   
   .menu{
+    background-image: url('./assets/img8.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,6 +26,7 @@
   }
   
   .contact {
+    background-image: url('./assets/img8.jpg');
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;

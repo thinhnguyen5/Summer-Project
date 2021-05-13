@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <div className='footer-container'>
-            <section className="footer-subcription">
-                <p className="footer-subcription-heading">
+            <section className="footer-subscription">
+                <p className="footer-subscription-heading">
                     Join All Time Coffee newsletter to enjoy our best coffee
                 </p>
-                <p className="footer-subcription-text">
+                <p className="footer-subscription-text">
                     You can unsubcribe any time.
                 </p>
                 <div className="input areas">
