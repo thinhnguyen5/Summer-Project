@@ -7,6 +7,7 @@
   
   .home,
   .menu,
+  .location,
   .contact,
   .sign-up {
     display: flex;
@@ -20,6 +21,15 @@
     background-image: url('./assets/img8.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .location {
+    background-image: url('./assets/img8.jpg');
+    background-position: center;
+    background-size: fill;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;

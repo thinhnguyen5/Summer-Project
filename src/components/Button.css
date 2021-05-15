@@ -41,3 +41,43 @@
     color: #242424;
     transition: all 0.3s ease-out;
 }
+
+.btn--wide {
+    padding: 12px 64px;
+    font-size: 20px;
+}
+
+.btn--wide:hover {
+    color: #fff;
+    background-color: #FFEBCD;
+    transition: all 0.2s ease-out;
+}
+
+.blue {
+    background-color: #276afb;
+    color: #fff;
+    border: none;
+}
+  
+.red {
+    background-color: #f00946;
+    color: #fff;
+    border: none;
+}
+
+.green {
+    background: #25ce4a;
+    color: #fff;
+    border: none;
+}
+
+.brown {
+    background: #CD853F;
+    color: #fff;
+    border: none;
+}
+  
+.green:hover {
+    background-color: #242424;
+}
+  
