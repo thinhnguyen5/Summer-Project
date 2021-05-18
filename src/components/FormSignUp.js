@@ -1,15 +1,17 @@
-import React from 'react'
-import useForm from './useForm'
-import validate from './validateInfo'
+import React from 'react';
+import useForm from './useForm';
+import validate from './validateInfo';
+import './Form.css';
+import './Button.css';
 
-const FromSignUp = () => {
-    const { handleChange, values, handleSubmit, errors } = useForm(validate);
+const FormSignUp = ({submitForm}) => {
+    const { handleChange, values, handleSubmit, errors } = useForm(submitForm, validate);
     return (
         <div className="form-content-right">
             <form className="form" onSubmit={handleSubmit}>
                 <h1>
                     Get Started with us today! Create your account by filling out the information out here
-                    information below.
+                    below.
                 </h1>
                 <div className='form-inputs'>
                     <label htmlFor='username'
@@ -62,7 +64,7 @@ const FromSignUp = () => {
                 <div className='form-inputs'>
                     <label htmlFor='password2'
                     className='form-label'>
-                        confirm Password
+                        Confirm Password
                     </label>
                         <input
                             id='password2'
@@ -80,11 +82,11 @@ const FromSignUp = () => {
                     Sign up
                 </button>
                 <span className='form-input-login'>
-                    Already have an account? Login <a href='#'>here</a>
+                    Already have not an account? Register <a href='/'>here</a>
                 </span>
             </form>
         </div>
     )
 }
 
-export default FromSignUp
+export default FormSignUp;
