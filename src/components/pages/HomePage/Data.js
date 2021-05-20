@@ -1,5 +1,5 @@
 export const homeObjOne = {
-    lightBg: true,
+    lightBg: false,
     lightText: true,
     lightTextDesc: true,
     topLine: 'Lets have a coffee',
@@ -8,12 +8,12 @@ export const homeObjOne = {
     buttonLabel: 'Get Started',
     imgStart: '',
     img: 'images/img9.jpg',
-    alt: 'Coffee Time'
+    alt: 'Vault'
 };
 
 export const homeObjTwo = {
-    lightBg: true,
-    lightText: true,
+    lightBg: false,
+    lightText: false,
     lightTextDesc: true,
     topLine: 'SINCERELY',
     headline: 'Starting from the mission "Deliver Happiness" - Giving happiness',
@@ -26,7 +26,7 @@ export const homeObjTwo = {
 };
   
 export const homeObjThree = {
-    lightBg: false,
+    lightBg: true,
     lightText: false,
     lightTextDesc: false,
     topLine: 'CARE',
@@ -40,7 +40,7 @@ export const homeObjThree = {
 };
   
 export const homeObjFour = {
-    lightBg: false,
+    lightBg: true,
     lightText: true,
     lightTextDesc: true,
     topLine: 'Creative',
