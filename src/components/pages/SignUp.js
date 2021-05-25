@@ -2,6 +2,7 @@ import React from 'react';
 import '../../App.css';
 import Footer from '../Footer';
 import Form from '../Form';
+import Login from '../Login'
 
 
 export default function SignUp() {
@@ -9,6 +10,7 @@ export default function SignUp() {
         <>
         <Form/>
         <Footer/>
+        <Login/>
         </>
     )
     
