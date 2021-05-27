@@ -7,8 +7,7 @@ import Menu from './components/pages/Menu';
 import Location from './components/pages/Location';
 import Contact from './components/pages/Contact';
 import SignUp from './components/pages/SignUp';
-import SignIn from './components/pages/SignIn';
-import Login from './components/Login';
+import Login from './components/pages/Login';
 import axios from 'axios';
 
 export default class App extends Component {
@@ -40,8 +39,7 @@ export default class App extends Component {
         <Route path='/menu' exact component={Menu}/>
         <Route path='/location' exact component={Location}/>
         <Route path='/contact' exact component={Contact}/>
-        {/* <Route path='/sign-up' exact component={SignUp}/>
-        <Route path='/sign-in' exact component={SignIn}/> */}
+        <Route path='/sign-up' exact component={SignUp}/> 
         <Route path='/login'
                exact
                render={
