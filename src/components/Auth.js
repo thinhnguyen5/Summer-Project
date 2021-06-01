@@ -9,7 +9,7 @@ let userInfo = {
 let myAuth = {
     authenticate: (username, password) => {
       return new Promise((resolve, reject) => {
-        axios.post(constants.baseAddress + '/login', {},
+        axios.get(constants.baseAddress + '/users/:id',
           {
               auth: {
               username: username,

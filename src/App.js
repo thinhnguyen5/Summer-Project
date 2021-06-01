@@ -6,8 +6,9 @@ import Home from './components/pages/HomePage/Home';
 import Menu from './components/pages/Menu';
 import Location from './components/pages/Location';
 import Contact from './components/pages/Contact';
-import SignUp from './components/pages/SignUp';
 import Login from './components/pages/Login';
+import Register from './components/pages/Register';
+import constants from './constants.json';
 import axios from 'axios';
 
 export default class App extends Component {
@@ -22,11 +23,12 @@ export default class App extends Component {
 
   onLogin = () => {
     this.setState({ isAuthenticated: true })
+    alert("Login Success")
   }
 
   onLoginFail = () => {
     this.setState({ isAuthenticated: false });
-    console.log("Login failed");
+    alert("Login failed, wrong username or password, please try");
   }
 
   render() {
@@ -39,7 +41,14 @@ export default class App extends Component {
         <Route path='/menu' exact component={Menu}/>
         <Route path='/location' exact component={Location}/>
         <Route path='/contact' exact component={Contact}/>
-        <Route path='/sign-up' exact component={SignUp}/> 
+        <Route path='/sign-up'
+               exact
+               render={
+                 (routeProps) =>
+                 <Register
+                 redirectPathOnSuccess='/login'
+                 {...routeProps}/>
+                }/> 
         <Route path='/login'
                exact
                render={
