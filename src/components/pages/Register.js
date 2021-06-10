@@ -47,6 +47,7 @@ export default function Register (props)
                         id='username'
                         type='username'
                         name='username'
+                        required='username require'
                         className='form-input'
                         placeholder='Enter your name'
                         />
@@ -60,6 +61,7 @@ export default function Register (props)
                         id='password'
                         type='password'
                         name='password'
+                        required='password require'
                         className='form-input'
                         placeholder='Enter your password'
                         />
@@ -73,6 +75,7 @@ export default function Register (props)
                         id='password2'
                         type='password'
                         name='password2'
+                        required='password require'
                         className='form-input'
                         placeholder='Enter your password again'
                         />

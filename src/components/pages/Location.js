@@ -1,14 +1,58 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../../App.css';
-import {GoogleMap, withScriptjs, withGoogleMap} from "react-google-maps";
+import {GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow} from "react-google-maps";
 // import Footer from '../Footer';
+import * as shopsData from "../../data/coffeeshop-location.json";
+import mapStyle from "../mapStyle"
 
 function Map() {
+  const  [selectedShop, setSelectedShop] = useState(null);
+
     return (
         <GoogleMap 
-            defaultZoom={10} 
-            defaultCenter={{ lat: 21.027763, lng: 105.834160}} 
-        />
+            defaultZoom={13} 
+            defaultCenter={{ lat: 21.027763, lng: 105.834160}}
+            defaultOptions={{ styles : mapStyle}} 
+        >
+          {shopsData.features.map(coffeeshop => (
+            <Marker 
+              key={coffeeshop.properties.SHOP_ID} 
+              position={{ 
+                lat: coffeeshop.geometry.coordinates[0], 
+                lng: coffeeshop.geometry.coordinates[1]
+              }}
+              onClick={() => {
+                setSelectedShop(coffeeshop);
+              }}
+              icon={{
+                url: `/img16.jpg`,
+                scaledSize: new window.google.maps.Size(25, 25)
+              }}
+            />
+          ))}
+
+          {selectedShop && (
+            <InfoWindow 
+            position={{ 
+              lat: selectedShop.geometry.coordinates[0], 
+              lng: selectedShop.geometry.coordinates[1]
+            }}
+            onCloseClick={() => {
+              setSelectedShop(null);
+            }}
+            >
+              <div>
+                <h2>{selectedShop.properties.NAME}</h2>
+                <p>{selectedShop.properties.ADDRESS}</p>
+                <p>{selectedShop.properties.OPEN}</p>
+                <p>{selectedShop.properties.NOTES}</p>
+                <p>{selectedShop.properties.PHONE}</p>
+                <p>{selectedShop.properties.SHOP_ID}</p>
+                <p>{selectedShop.properties.DESCRIPTION}</p>
+              </div>
+            </InfoWindow>
+          ) }
+        </GoogleMap>
     );
 }
 

@@ -1,0 +1,309 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 1,
+          "NAME": "NGUYỄN VĂN LỘC",
+          "ADDRESS": "50 Nguyễn Văn Lộc, Quận Hà Đông, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911791152"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.985585330119008, 105.78582981093204]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 2,
+          "NAME": "THÁI HÀ",
+          "ADDRESS": "8 Thái Hà, Quận Đống Đa, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811137"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.01031525026478, 105.82313941093244]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 3,
+          "NAME": "Lò Đúc",
+          "ADDRESS": "195 Lò Đúc, Hai Bà Trưng, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811138"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.009817159935594, 105.86090268209648]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 4,
+          "NAME": "Long Biên",
+          "ADDRESS": "2/208 Nguyễn Văn Cừ, Long Biên, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811157"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.044008357953754, 105.8726463704563]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 5,
+          "NAME": "Hà Đông",
+          "ADDRESS": "Hồ Gươm Plaza, 102 Trần Phú, Hà Đông, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811148"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [20.978741647748702, 105.78493253818229]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 6,
+          "NAME": "Tây Hồ",
+          "ADDRESS": "75 Trích Sài, Tây Hồ, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811159"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.046787274090224, 105.81450508209711]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 7,
+          "NAME": "Phạm Ngọc Thạch",
+          "ADDRESS": "B10 Phạm Ngọc Thạch, Đống Đa, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811143"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.009093361303194, 105.8347060863314]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 8,
+          "NAME": "Vạn Phúc",
+          "ADDRESS": "101 Vạn Phúc, Ba Đình, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811126"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.03379105139221, 105.8158706127842]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 9,
+          "NAME": "Trúc Bạch",
+          "ADDRESS": "15 Trúc Bạch, Tây Hồ, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811127"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.05224482353098, 105.83903776152779]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 10,
+          "NAME": "Lê Đức Thọ",
+          "ADDRESS": "29 Lê Đức Thọ, Mỹ Đình, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811144"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.036579661616962, 105.77118840908135]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 11,
+          "NAME": "Lý Thường Kiệt",
+          "ADDRESS": "4 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811131"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.021869484844547, 105.85701539744038]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 12,
+          "NAME": "Quán Sứ",
+          "ADDRESS": "68 Quán Sứ, Hoàn Kiếm, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811132"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.02539196212004, 105.84488309373758]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 13,
+          "NAME": "Nguyễn Văn Huyên",
+          "ADDRESS": "11 Nguyễn Văn Huyên, Cầu Giấy, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811142"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.038367447067895, 105.79747301054513]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 14,
+          "NAME": "Trần Huy Liệu",
+          "ADDRESS": "101 C6 Trần Huy Liệu, Ba Đình, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811128"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.02735054607537, 105.82261498394824]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 15,
+          "NAME": "Hàng Điếu",
+          "ADDRESS": "54 Hàng Điếu, Hoàn Kiếm, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811138"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.032873296424707, 105.84678981278432]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 16,
+          "NAME": "Nhà Thờ",
+          "ADDRESS": "27 Nhà Thờ, Hoàn Kiếm, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811138"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.02902408607264, 105.84964109744047]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 17,
+          "NAME": "The Manor",
+          "ADDRESS": "B011-B012 The Manor, Mễ Trì, Mỹ Đình, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811138"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.01472186010338, 105.77681964902584]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 18,
+          "NAME": "Linh Đàm",
+          "ADDRESS": "Số 6 Lô TT3A, Khu đô thị Linh Đàm, Hoàng Mai, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911811161"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [20.96384523360624, 105.82575993063263]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "SHOP_ID": 19,
+          "NAME": "Đường Láng",
+          "ADDRESS": "94 Đường Láng, Thịnh Quang, Đống Đa, Hà Nội",
+          "OPEN": null,
+          "NOTES": "Outdoor",
+          "DESCRIPTION": "Monday - Sunday : 7:30 - 23:00",
+          "PHONE": "+84911866498"          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [21.004510388773433, 105.81865591463526]
+        }
+      }
+    ]
+}

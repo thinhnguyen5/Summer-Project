@@ -13,13 +13,13 @@ function Cards() {
                         src='images/img1.jpg'
                         text='Bring the best feeling for customer'
                         label='Coffee Time'
-                        path='/menu'
+                        path='/location'
                         />
                          <CardItem
                         src='images/img2.jpg'
                         text='Bring the best feeling for customer'
                         label='Coffee Time'
-                        // path='/location'
+                        path='/location'
                         />
                     </ul>
                     <ul className='cards__items'>
@@ -27,19 +27,19 @@ function Cards() {
                         src='images/img3.jpg'
                         text='Bring the best feeling for customer'
                         label='Coffee Time'
-                        // path='/location'
+                        path='/location'
                         />
                          <CardItem
                         src='images/img4.jpg'
                         text='Bring the best feeling for customer'
                         label='Coffee Time'
-                        // path='/location'
+                        path='/location'
                         />
                          <CardItem
                         src='images/img5.jpg'
                         text='Bring the best feeling for customer'
                         label='Coffee Time'
-                        // path='/location'
+                        path='/location'
                         />
                     </ul>
                     <ul className='cards__items'>
@@ -47,7 +47,7 @@ function Cards() {
                         src='images/img6.jpg'
                         text='Bring the best feeling for customer'
                         label='Coffee Time'
-                        // path='/location'
+                        path='/location'
                         />
                     </ul>
                 </div>
