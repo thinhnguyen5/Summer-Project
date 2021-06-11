@@ -4,11 +4,14 @@ import {GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow} from "react-
 // import Footer from '../Footer';
 import * as shopsData from "../../data/coffeeshop-location.json";
 import mapStyle from "../mapStyle"
+import Footer from '../Footer';
+import CardsLocation from '../CardsLocation';
 
 function Map() {
   const  [selectedShop, setSelectedShop] = useState(null);
 
     return (
+      <>
         <GoogleMap 
             defaultZoom={13} 
             defaultCenter={{ lat: 21.027763, lng: 105.834160}}
@@ -53,6 +56,9 @@ function Map() {
             </InfoWindow>
           ) }
         </GoogleMap>
+        <CardsLocation/>
+        <Footer/>
+        </>
     );
 }
 
@@ -67,7 +73,7 @@ export default function Location() {
           }`}
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `100%` }} />}
-          mapElement={<div style={{ height: `100%` }} />}
+          mapElement={<div style={{ height: `70%` }} />}
         />
       </div>
     );
