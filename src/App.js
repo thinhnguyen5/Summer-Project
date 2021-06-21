@@ -8,6 +8,9 @@ import Location from './components/pages/Location';
 import Contact from './components/pages/Contact';
 import Login from './components/pages/Login';
 import Register from './components/pages/Register';
+import SearchView from './components/SearchView';
+import Footer from './components/Footer';
+import data from './data/drink.json';
 import constants from './constants.json';
 import axios from 'axios';
 
@@ -16,9 +19,20 @@ export default class App extends Component {
   {
     super(props);
     this.state = {
+      drinks: data.drinks,
       isAuthenticated: false,
-      someData: []
-    };
+    }
+    console.log("constructor")
+  }
+
+  componentDidMount() {
+    console.log("Mounted")
+    axios.get(constants.baseAddress + '/menu').then(result => {
+      this.setState({ menu: result.data.menu });
+    })
+    .catch(error => {
+      console.error(error);
+    })
   }
 
   onLogin = () => {
@@ -31,14 +45,24 @@ export default class App extends Component {
     alert("Login failed, wrong username or password, please try");
   }
 
-  render() {
+  render() 
+  {
+    console.log("render")
   return (
     <>
     <Router>
       <Navbar/>
       <Switch>
         <Route path='/' exact component={Home}/>
-        <Route path='/menu' exact component={Menu}/>
+        <Route path='/menu' 
+               exact
+               render={
+                 (routeProps) => 
+                 <>
+                 <Menu
+                 {...routeProps} />
+                 </>
+                }/>
         <Route path='/location' exact component={Location}/>
         <Route path='/contact' exact component={Contact}/>
         <Route path='/sign-up'
