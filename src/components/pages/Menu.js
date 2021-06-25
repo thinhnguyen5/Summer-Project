@@ -12,9 +12,6 @@ export default class Menu extends React.Component {
             drinks: data.drinks,
             productSearchString: "",
             adminModeActive: false,
-
-            newItemName: "",
-            newItemPrice: "",
         }
     }
 
@@ -24,12 +21,12 @@ export default class Menu extends React.Component {
         this.setState({ productSearchString: event.target.value});
     }
 
-    addNewItem = () => {
+    addNewItem = (name, price) => {
         let newItems = [...this.state.drinks];
         newItems.push({
             id: newItems.length + 1,
-            name: this.state.newItemName,
-            price: this.state.newItemPrice
+            name: name,
+            price: price
         });
 
         this.setState({
@@ -37,6 +34,8 @@ export default class Menu extends React.Component {
         });
 
     }
+
+    deleteDrink = drinkId => this.setState({drinks: this.state.drinks.filter(drink => drink.id !== drinkId)})
 
     render() 
     {
@@ -52,7 +51,12 @@ export default class Menu extends React.Component {
             </>
 
         if(this.state.adminModeActive) {
-            output = <AdminView disableAdminMode={() => this.setState({adminModeActive: false})} />;
+            output = <AdminView
+                        disableAdminMode={() => this.setState({adminModeActive: false})} 
+                        addNewItem={ this.addNewItem }
+                        drinks={ this.state.drinks }
+                        deleteDrink={ this.deleteDrink }
+                    />;
         }
         
 
