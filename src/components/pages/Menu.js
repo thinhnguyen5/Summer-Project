@@ -1,18 +1,27 @@
 import React from 'react';
 import '../../App.css';
-import data from '../../data/drink.json';
 import SearchView from '../SearchView';
 import Footer from '../Footer';
 import AdminView from '../AdminView';
+import axios from 'axios';
 
 export default class Menu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            drinks: data.drinks,
+            drinks: [],
             productSearchString: "",
             adminModeActive: false,
         }
+        console.log("constructor")
+    }
+
+    componentDidMount() {
+        console.log("Mounted")
+        axios.get('http://localhost:4000/menu').then(result => {
+            this.setState({ drinks: result.data.drink });
+        })
+        .catch(err =>console.log(err));
     }
 
     onSearchFieldChange = (event) => {
