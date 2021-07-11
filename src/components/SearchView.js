@@ -6,7 +6,7 @@ export default function SearchView(props) {
    
     return (
         <div>
-            <div className={ styles.presentationModeGrid }>
+            <div className={ styles.section }>
                 {
                     props.drinks.map(drink => <SearchResult key={drink.id} {...drink} />)
                 }

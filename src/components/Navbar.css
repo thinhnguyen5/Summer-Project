@@ -156,3 +156,26 @@
       transition: 250ms;
     }
   }
+
+.nav-cart{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  right: -25px;
+  color: #fff;
+}
+
+.nav-cart span {
+  position: absolute;
+  top: -12px;
+  right: -10px;
+  background: crimson;
+  font-size: 10px;
+  padding: 3px 5px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.fa-shopping-cart {
+  color: black;
+}
