@@ -1,5 +1,13 @@
+  
+#drink{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .section
 {
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px 	#D2691E;
   padding: 15px 10px;
 }
