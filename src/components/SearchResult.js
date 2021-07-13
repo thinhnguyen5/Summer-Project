@@ -6,16 +6,22 @@ export default function SearchResult(props) {
     return (
         <div>
             <div className={ styles.card }>
-                <Link to={`/menu/${props.id}`}>
-                    <img src={`./images/${props.img}`}/>
-                </Link>
-                <div className={ styles.content}>
-                    <h3>
-                        <Link to={`/menu/${props.id}`}>{props.name}</Link>
-                    </h3>
-                    <span>${ props.price }</span>
-                    <p>{ props.description }</p>
-                    <button>Add to cart</button>
+                <img src={`./images/${props.img}`}/>
+                <div className="box">
+                    <div className="row">
+                        <h2>{ props.name }</h2>
+                        <span>${ props.price }</span>
+                        <p>{ props.description }</p>
+                        <p>{ props.nutritioninformation }</p>
+                        <p>{ props.size }</p>
+                        <p>{ props.calories }</p>
+                        <p>{ props.fat }</p>
+                        <p>{ props.cholesterol }</p>
+                        <p>{ props.carbohydrates }</p>
+                        <p>{ props.protein }</p>
+                        <p>{ props.caffeine }</p>
+                        <p>{ props.ingredients }</p>
+                    </div>
                 </div>
             </div>
         </div>
