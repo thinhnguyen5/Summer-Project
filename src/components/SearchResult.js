@@ -1,29 +1,59 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// import React from 'react';
+// import { Link } from 'react-router-dom';
+// import styles from './SearchResult.module.css';
+
+// export default function SearchResult(props) {
+//     return (
+//         <div className={styles.card}>
+//             <div className={ styles.details }>
+//                 <img src={`./images/${props.img}`}/>
+//                 <div className={ styles.box }>
+//                     <div className={ styles.row }>
+//                         <h2>{ props.name }</h2>
+//                         <span>${ props.price }</span>
+//                     </div>
+//                     <p>{ props.description }</p>
+//                     <p> <h3> Nutrition Information</h3> { props.nutritioninformation }</p>
+//                     <p> Serving Size{ props.size } fl oz</p>
+//                     <p> Calories { props.calories }</p>
+//                     <p> Total Fat { props.fat } g</p>
+//                     <p> Cholesterol { props.cholesterol } mg</p>
+//                     <p> Carbohydrates { props.carbohydrates } g</p>
+//                     <p> Protein { props.protein } g</p>
+//                     <p> Caffeine { props.caffeine } g</p>
+//                     <p> <h4>ingredients</h4>{ props.ingredients }</p>
+//                     <Link to="/cart" className={ styles.cart }>
+//                         Add to cart
+//                     </Link>
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
+import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './SearchResult.module.css';
 
-export default function SearchResult(props) {
+const SearchResult = ({drinks = [] }) => {
     return (
-        <div>
-            <div className={ styles.card }>
-                <img src={`./images/${props.img}`}/>
-                <div className="box">
-                    <div className="row">
-                        <h2>{ props.name }</h2>
-                        <span>${ props.price }</span>
-                        <p>{ props.description }</p>
-                        <p>{ props.nutritioninformation }</p>
-                        <p>{ props.size }</p>
-                        <p>{ props.calories }</p>
-                        <p>{ props.fat }</p>
-                        <p>{ props.cholesterol }</p>
-                        <p>{ props.carbohydrates }</p>
-                        <p>{ props.protein }</p>
-                        <p>{ props.caffeine }</p>
-                        <p>{ props.ingredients }</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        drinks.map(drink => (
+          <div className={ styles.section }>
+               <div className={ styles.card } key ={drink.id}>
+                   <Link key={drink.id} to={`/menu/${drink.id}`}>
+                       <img src={`./images/${drink.img}`}/>
+                   </Link>
+                   <div className={styles.content}>
+                       <h3>
+                           <Link to={`/menu/${drink.id}`}>{drink.name}</Link>
+                       </h3>
+                       <span>${drink.price}</span>
+                       <p>{drink.description}</p>
+                       <button>Add to cart</button>
+                   </div>
+               </div>
+          </div>    
+        ))
     )
 }
+
+export default SearchResult

@@ -1,8 +1,10 @@
 import React from 'react';
 import '../../App.css';
-import SearchView from '../SearchView';
+import SearchResult from '../SearchResult';
 import Footer from '../Footer';
 import AdminView from '../AdminView';
+import { Button } from '../Button';
+import '../SearchResult.module.css'
 import axios from 'axios';
 
 export default class Menu extends React.Component {
@@ -17,7 +19,6 @@ export default class Menu extends React.Component {
     }
 
     componentDidMount() {
-        console.log("Mounted")
         axios.get('http://localhost:4000/menu').then(result => {
             this.setState({ drinks: result.data.drink });
         })
@@ -50,10 +51,11 @@ export default class Menu extends React.Component {
     {
         let output = 
             <>
-                    <div>
-                        Search <input type="text" onChange={this.onSearchFieldChange} value={ this.state.productSearchString}/>
-                    </div>
-                    <SearchView
+                <form>
+                    <input className="input" type="text" placeholder="Find your favorite drink ^^" onChange={this.onSearchFieldChange} value={ this.state.productSearchString}/>
+                    <Button buttonStyle="btn--outline">Search</Button>
+                </form> 
+                    <SearchResult
                         drinks= {this.state.drinks.filter((item) => item.name.includes(this.state.productSearchString)) } 
                     />;
                     <button onClick={ () => this.setState({adminModeActive: !this.state.adminModeActive})}>Admin mode</button>
