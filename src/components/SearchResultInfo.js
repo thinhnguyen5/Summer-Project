@@ -6,21 +6,21 @@ import { Link  } from 'react-router-dom'
 
 const SearchResultInfo = ({ match, history}) => {
 
-    const [drink, setDrink] = useState();
+    const [menu, setMenu] = useState();
 
     useEffect(() => {
         axios.get(`http://localhost:4000/menu/${match.params.id}`)
         .then(res => {
-            setDrink(res.data);
+            setMenu(res.data);
         })
         .catch(() => history.replace('/not-found'));
-    }, [match.params.id]);
+    });
     return (
-        (!drink) ? null :
+        (!menu) ? null :
         <>
         <div className="card">
              <div className="details">
-                 <img src={`./images/${drink.img}`}/>
+                 {/* <img src={`./images/${menu.img}`}/>
                  <div className="box">
                      <div className="row">
                          <h2>{ drink.name }</h2>
@@ -39,7 +39,7 @@ const SearchResultInfo = ({ match, history}) => {
                      <Link to="/cart" className="cart">
                          Add to cart
                      </Link>
-                 </div>
+                 </div> */}
              </div>
          </div>
          </>

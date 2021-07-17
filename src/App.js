@@ -9,7 +9,6 @@ import Contact from './components/pages/Contact';
 import Login from './components/pages/Login';
 import Register from './components/pages/Register';
 import SearchResult from './components/SearchResult';
-import SearchResultInfo from './components/SearchResultInfo';
 
 export default class App extends Component {
   constructor(props)
@@ -56,13 +55,6 @@ export default class App extends Component {
                   <SearchResult 
                   drinks={this.state.drinks}
                   {...props} />
-               }/>
-        <Route path='/menu/:id' 
-               exact
-               render={
-                 props =>
-                 <SearchResultInfo
-                 {...props} />
                }/>
         <Route path='/location' exact component={Location}/>
         <Route path='/contact' exact component={Contact}/>

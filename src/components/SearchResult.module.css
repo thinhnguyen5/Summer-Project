@@ -1,4 +1,4 @@
-/* .card{
+.card{
   min-width: 300px;
   min-height: 400px;
   border: 1px solid black;
@@ -40,9 +40,6 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.box .row span{
-  color: crimson;
-}
 .box p{
   line-height: 1.5;
   margin: 15px 0;
@@ -71,7 +68,11 @@
   font-size: 18px;
   margin-bottom: 16px;
   border: 1px solid #333300;
-} */
+}
+
+.input::placeholder {
+  color: #b1b1b1;
+}
 
 .section
 {
@@ -79,7 +80,7 @@
   padding: 15px 10px;
 }
 
-.card{
+/* .card{
   min-width: 300px;
   min-height: 400px;
   border: 1px solid #D2691E;
@@ -130,4 +131,4 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 15px 0;
-}
+} */

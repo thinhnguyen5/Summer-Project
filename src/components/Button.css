@@ -26,6 +26,15 @@
     transition: all 0,3s ease-out;
 }
 
+.btn--search {
+    background-color: transparent;
+    color: #242424;
+    background: #FFDEAD;
+    padding: 8px 20px;
+    border: 1px solid #333300;
+    transition: all 0,3s ease-out;
+}
+
 .btn--medium {
     padding: 8px, 20px;
     font-size: 20px;
