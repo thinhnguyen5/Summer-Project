@@ -34,7 +34,7 @@ export default function Login(props) {
         </h1>
         <div className='form-inputs'>
             <label htmlFor='username'
-          className='form-label'>
+            className='form-label'>
               Username
             </label>
               <input
