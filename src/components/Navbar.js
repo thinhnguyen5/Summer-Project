@@ -75,12 +75,6 @@ function Navbar() {
                </ul>
                {button  && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
            </div>
-           <div className="nav-cart">
-               <span>0</span>
-               <Link to="/cart">
-                    <i class="fas fa-shopping-cart"></i>
-               </Link>
-           </div>
        </nav>
 
        </>
