@@ -51,11 +51,6 @@
     overflow: hidden;
   }
   
-  .fade-img {
-    animation-name: fade-img;
-    animation-duration: 2s;
-  }
-  
   .cards__item__pic-wrap::after {
     content: attr(data-category);
     position: absolute;
@@ -66,7 +61,7 @@
     font-size: 12px;
     font-weight: 700;
     color: #fff;
-    background-color: #1f98f4;
+    background-color: 	#FFDEAD;
     box-sizing: border-box;
   }
   
