@@ -1,7 +1,7 @@
 export const homeObjOne = {
     lightBg: false,
     lightText: true,
-    lightTextDesc: true,
+    lightTextDesc: false,
     topLine: 'Lets have a coffee',
     headline: '"Lets have a coffee" - A very personal appointment of Vietnamese people.',
     description: 'At The All Time Coffee, we always cherish stories and uphold the value of Human Connection. We hope that The Coffee House will become a "Coffee House", where people come together and find joy and intimate sharing with fragrant and quality coffee cups.',
@@ -13,8 +13,8 @@ export const homeObjOne = {
 
 export const homeObjTwo = {
     lightBg: false,
-    lightText: false,
-    lightTextDesc: true,
+    lightText: true,
+    lightTextDesc: false,
     topLine: 'SINCERELY',
     headline: 'Starting from the mission "Deliver Happiness" - Giving happiness',
     description:
@@ -27,8 +27,8 @@ export const homeObjTwo = {
   
 export const homeObjThree = {
     lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: 'CARE',
     headline: 'Each product and campaign of The All Time Coffee always revolves around people',
     description:

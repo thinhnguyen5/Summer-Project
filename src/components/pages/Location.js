@@ -29,7 +29,7 @@ function Map() {
               }}
               icon={{
                 url: `/img16.jpg`,
-                scaledSize: new window.google.maps.Size(25, 25)
+                scaledSize: new window.google.maps.Size(25, 25)  //size in px of the icon
               }}
             />
           ))}

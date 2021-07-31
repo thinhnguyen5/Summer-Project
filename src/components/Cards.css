@@ -55,13 +55,13 @@ h1 {
   content: attr(data-category);
   position: absolute;
   bottom: 0;
-  margin-left: 10px;
-  padding: 6px 8px;
+  margin-left: 50px;
+  padding: 10px 20px;
   max-width: calc((100%) - 60px);
   font-size: 12px;
   font-weight: 700;
-  color: #fff;
-  background-color: 	#FFDEAD;
+  color: #242424;
+  background-color:#FFDEAD;
   box-sizing: border-box;
 }
 
@@ -85,11 +85,11 @@ h1 {
 }
 
 .cards__item__info {
-  padding: 20px 30px 30px;
+  padding: 10px 20px 20px;
 }
 
 .cards__item__text {
-  color: #252e48;
+  color: #D2691E;
   font-size: 18px;
   line-height: 24px;
 }
