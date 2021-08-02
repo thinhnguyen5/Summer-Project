@@ -27,7 +27,7 @@ export default class App extends Component {
 
   onLoginFail = () => {
     this.setState({ isAuthenticated: false });
-    alert("Login failed, wrong username or password, please try");
+    alert("Login failed, wrong username or password, please try again!");
   }
 
   render() 
@@ -38,7 +38,7 @@ export default class App extends Component {
     <Router>
       <Navbar/>
       <Switch>
-        <Route path='/' exact component={Home}/>
+        <Route path='/home' exact component={Home}/>
         <Route path='/menu' 
                exact
                render={
@@ -63,10 +63,10 @@ export default class App extends Component {
                render={
                  (routeProps) =>
                  <Register
-                 redirectPathOnSuccess='/login'
+                 redirectPathOnSuccess='/'
                  {...routeProps}/>
                 }/> 
-        <Route path='/login'
+        <Route path='/'
                exact
                render={
                  (routeProps) => 
@@ -74,7 +74,7 @@ export default class App extends Component {
                  loginSuccess = { this.onLogin }
                  loginFail = { this.onLoginFail }
                  userInfo={ this.state.userInfo }
-                 redirectPathOnSuccess="/menu"
+                 redirectPathOnSuccess="/home"
                  {...routeProps} />
                } />
       </Switch>

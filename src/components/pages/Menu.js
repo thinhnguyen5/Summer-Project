@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import SearchResult from '../SearchResult';
+import SearchView from '../SearchView';
 import Footer from '../Footer';
 import { Button } from '../Button';
 import '../SearchResult.module.css'
@@ -37,7 +37,7 @@ export default class Menu extends React.Component {
                     <input className="input" type="text" placeholder="Find your favorite drink ^^" onChange={this.onSearchFieldChange} value={ this.state.productSearchString}/>
                     <Button buttonStyle="btn--search">Search</Button>
                 </form> 
-                    <SearchResult
+                    <SearchView
                         drinks= {this.state.drinks.filter((item) => item.name.includes(this.state.productSearchString)) } 
                     />
             </>
