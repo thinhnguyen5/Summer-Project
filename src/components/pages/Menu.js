@@ -18,7 +18,7 @@ export default class Menu extends React.Component {
 
     componentDidMount() {
         axios.get('http://localhost:4000/menu').then(result => {
-            this.setState({ drinks: result.data.drink });
+            this.setState({ drinks: result.data.menu });
         })
         .catch(err =>console.log(err));
     }
@@ -31,20 +31,13 @@ export default class Menu extends React.Component {
 
     render() 
     {
-        let output = 
-            <>
-                <form>
-                    <input className="input" type="text" placeholder="Find your favorite drink ^^" onChange={this.onSearchFieldChange} value={ this.state.productSearchString}/>
-                    <Button buttonStyle="btn--search">Search</Button>
-                </form> 
-                    <SearchView
-                        drinks= {this.state.drinks.filter((item) => item.name.includes(this.state.productSearchString)) } 
-                    />
-            </>
-        
         return (
             <>
-                { output }
+                <input className="input" type="text" placeholder="Find your favorite drink ^^" onChange={this.onSearchFieldChange} value={ this.state.productSearchString}/>
+                 
+                <SearchView
+                    drinks= {this.state.drinks.filter((item) => item.name.includes(this.state.productSearchString)) } 
+                />
                 <Footer/>
             </>
     
