@@ -45,13 +45,12 @@ function Map() {
             }}
             >
               <div>
-                <h2>{selectedShop.properties.NAME}</h2>
-                <p>{selectedShop.properties.ADDRESS}</p>
-                <p>{selectedShop.properties.OPEN}</p>
+                <h2>Name: {selectedShop.properties.NAME}</h2>
+                <p>Address: {selectedShop.properties.ADDRESS}</p>
                 <p>{selectedShop.properties.NOTES}</p>
-                <p>{selectedShop.properties.PHONE}</p>
-                <p>{selectedShop.properties.SHOP_ID}</p>
-                <p>{selectedShop.properties.DESCRIPTION}</p>
+                <p>Phone number: {selectedShop.properties.PHONE}</p>
+                <p>ID: {selectedShop.properties.SHOP_ID}</p>
+                <p>Open time: {selectedShop.properties.DESCRIPTION}</p>
               </div>
             </InfoWindow>
           ) }
