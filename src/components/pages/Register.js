@@ -66,20 +66,6 @@ export default function Register (props)
                         placeholder='Enter your password'
                         />
                     </div>
-                    <div className='form-inputs'>
-                    <label htmlFor='password2'
-                    className='form-label'>
-                        Confirm Password
-                    </label>
-                        <input
-                        id='password2'
-                        type='password'
-                        name='password2'
-                        required='password require'
-                        className='form-input'
-                        placeholder='Enter your password again'
-                        />
-                    </div>
                     <button className='form-input-btn'
                     type='submit'>
                         Sign up
