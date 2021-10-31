@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+// import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import SearchView from '../SearchView';
 import Footer from '../Footer';
 import { Button } from '../Button';
@@ -23,21 +24,35 @@ export default class Menu extends React.Component {
         .catch(err =>console.log(err));
     }
 
+    // onSearchFieldChange = (event) => {
+    //     console.log('Keyboard event');
+    //     console.log(event.target.value);
+    //     this.setState({ productSearchString: event.target.value});
+    // }
+
     onSearchFieldChange = (event) => {
         console.log('Keyboard event');
         console.log(event.target.value);
-        this.setState({ productSearchString: event.target.value});
+        this.setState({ productSearchString: event.target.value})        
     }
 
     render() 
     {
         return (
             <>
-                <input className="input" type="text" placeholder="Find your favorite drink ^^" onChange={this.onSearchFieldChange} value={ this.state.productSearchString}/>
-                 
+                
+                <div className="input areas">
+                    <form>
+
+                        <input className="footer-input" type='text' placeholder='Find your favorite coffee' onChange={this.onSearchFieldChange} value={ this.state.productSearchString }/>
+                        <Button buttonStyle='btn--outline'>Search</Button>
+
+                    </form>
+                </div>
                 <SearchView
-                    drinks= {this.state.drinks.filter((item) => item.name.includes(this.state.productSearchString)) } 
+                    drinks= {this.state.drinks.filter((item) => item.name) } 
                 />
+                
                 <Footer/>
             </>
     

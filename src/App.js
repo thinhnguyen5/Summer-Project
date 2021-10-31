@@ -38,7 +38,7 @@ export default class App extends Component {
     <Router>
       <Navbar/>
       <Switch>
-        <Route path='/home' exact component={Home}/>
+        <Route path='/' exact component={Home}/>
         <Route path='/menu' 
                exact
                render={
@@ -66,7 +66,7 @@ export default class App extends Component {
                  redirectPathOnSuccess='/'
                  {...routeProps}/>
                 }/> 
-        <Route path='/'
+        <Route path='/login'
                exact
                render={
                  (routeProps) => 

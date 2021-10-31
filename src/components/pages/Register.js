@@ -71,7 +71,7 @@ export default function Register (props)
                         Sign up
                     </button>
                     <span className='form-input-login'>
-                        Already have an account? Sign In <a href='/'>here</a>
+                        Already have an account? Sign In <a href='/login'>here</a>
                     </span>
                 </form>
             </div>
