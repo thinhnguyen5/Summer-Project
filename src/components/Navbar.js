@@ -33,9 +33,9 @@ function Navbar() {
        <>
        <nav className='navbar'>
            <div className='navbar-container'>
-               <Link to="/" className='navbar-logo' onClick= 
+               <Link to="/" className='navbar-logo' alt='BUWJ LOGO' onClick= 
                {closeMobileMenu}>
-                   All Time Coffee <SiBuymeacoffee className='navbar-icon'/>
+                   <SiBuymeacoffee className='navbar-icon'/> DJBUWJ COFFEE 
                </Link>
                <div className='menu-icon' onClick={handleClick}>
                    <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

@@ -19,19 +19,18 @@
 }
   
 .navbar-logo {
-  color: #333300;
+  color: #050505;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
 }
   
-.fa-coffee {
-  margin-left: 0.5rem;
-  font-size: 1.8rem;
+.navbar-icon{
+  margin-right: 10px;
 }
   
 .nav-menu {
@@ -41,7 +40,7 @@
   list-style: none;
   text-align: center;
   width: 60vw;
-  justify-content: end;
+  justify-content: center;
   margin-right: 2rem;
 }
   
